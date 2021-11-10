@@ -4,7 +4,7 @@ window.onload = () => {
         let value = this.value.trim(),
             list = document.querySelectorAll('.ul li');
 
-        if( value ) {
+        if( value != "" ) {
             list.forEach(elem => {
                 if(elem.innerText.search(value) == -1){
                     elem.classList.add('hide');
