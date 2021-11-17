@@ -6,7 +6,8 @@ window.onload = () => {
 
         if( value != "" ) {
             list.forEach(elem => {
-                if(elem.innerText.search(value) == -1){
+                console.log(elem.innerText);
+                if(elem.innerText.toLowerCase().search(value) == -1){
                     elem.classList.add('hide');
                 }
             });
